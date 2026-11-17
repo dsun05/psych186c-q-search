@@ -1,0 +1,19 @@
+# Track only the experiment and its tools; the course PDFs and .venv stay local
+/*
+!/.gitignore
+!/README.md
+!/q_search/
+!/q_search_tools/
+
+# Classmates' names stay out of the public repo (share via the Drive zip)
+q_search/participant_assignment.csv
+q_search_tools/roster.txt
+
+# Participant data goes through Google Drive
+q_search/data/
+q_search_tools/*.csv
+
+# PsychoPy and Python byproducts
+*_lastrun.py
+__pycache__/
+.DS_Store
