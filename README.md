@@ -10,9 +10,9 @@ compares observers' criterion shifts with the ideal observer.
 - `q_search/`: the PsychoPy project to zip and upload.
   - `q_search.psyexp`: the Builder experiment.
   - `q_search_helpers.py`: trial building, scoring, and roster lookup.
-  - `participant_assignment.csv`: not in the repo (it holds classmates' names). Get it
-    from the group's Drive zip or regenerate it with `make_assignment.py`.
+  - `participant_assignment.csv`: each classmate's ID and block order, from `make_assignment.py`.
   - `data/`: created at run time; one CSV per session, `sub-<id>_q_search.csv`.
+    `elapsed_s` is seconds since the session started, so the last row gives session length.
 - `q_search_tools/`: not part of the submission.
   - `build_psyexp.py`: generates the `.psyexp`. Rerunning it overwrites Builder edits.
   - `make_assignment.py`: builds the roster CSV from `roster.txt` (one classmate first name per line).

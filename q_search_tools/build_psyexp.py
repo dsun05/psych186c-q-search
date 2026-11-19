@@ -24,6 +24,7 @@ BEFORE_EXPERIMENT = '''\
 import os
 import random
 import sys
+import time
 import pandas as pd
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -39,6 +40,9 @@ FIX_DUR = 0.5        # fixation cross
 MASK_DUR = 0.2       # pattern mask right after the grid
 RESP_DEADLINE = 3.0  # seconds from trial start (2.5 s after grid onset)
 FEEDBACK_DUR = 0.8
+
+# Each row records seconds since this point, so session length is the last row's value
+session_start = time.monotonic()
 
 # Seed with the participant's name so each person gets their own order
 participant_name = expInfo['participant'].strip().lower()
@@ -150,6 +154,7 @@ session_list.append({
     'points': points,
     'block_score': block_score,
     'total_score': total_score,
+    'elapsed_s': round(time.monotonic() - session_start, 2),
 })
 '''
 

@@ -5,8 +5,7 @@
 !/q_search/
 !/q_search_tools/
 
-# Classmates' names stay out of the public repo (share via the Drive zip)
-q_search/participant_assignment.csv
+# roster.txt is only the input to make_assignment.py; participant_assignment.csv is tracked
 q_search_tools/roster.txt
 
 # Participant data goes through Google Drive
