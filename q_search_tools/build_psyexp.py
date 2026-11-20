@@ -33,7 +33,7 @@ import q_search_helpers as qs
 
 BEGIN_EXPERIMENT = '''\
 # ---- Set after piloting: how long the grid is shown (seconds) ----
-GRID_DUR = 0.100
+GRID_DUR = 0.150
 TASK_VERSION = 'v1'
 
 FIX_DUR = 0.5        # fixation cross

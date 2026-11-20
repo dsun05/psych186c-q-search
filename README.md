@@ -21,7 +21,8 @@ compares observers' criterion shifts with the ideal observer.
 ## Piloting
 
 Enter `pilot50`, `pilot100`, or `pilot150` as the participant name to run with that grid
-duration in ms. Then set `GRID_DUR` in the `setup` code component of the `welcome` routine.
+duration in ms. Piloting settled on 150 ms (`GRID_DUR = 0.150` in `build_psyexp.py`,
+and in the `setup` code component of the `welcome` routine).
 
 ## Before submitting
 
